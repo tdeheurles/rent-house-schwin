@@ -1,15 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Images from './Images.js'
+import ImageGallery from 'react-image-gallery';
+import images from './images'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        
-      </header>
+        <div>Maison de Schwindratzheim</div>
+        <ImageGallery items={images} thumbnailPosition="left"/>
     </div>
   );
 }
